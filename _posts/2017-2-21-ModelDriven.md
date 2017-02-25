@@ -130,7 +130,7 @@ public class UserAction {
 
 上述做法不好之处是：如果实体类的属性非常多，那么`Action`中也要定义相同的属性。<br>
 
-+ 第二种做法是将User对象定义到`UserAction`中，然后在JSP中通过`user`属性来给`user`赋值：<br>
++ 第二种做法是将User对象定义到`UserAction`中，然后在JSP中通过user属性来给user赋值：<br>
 
 > UserAction
 
@@ -299,8 +299,8 @@ public class UserAction implements ModelDriven{
 </form>
 ```
 
-上述代码运行起来之后，你在更新界面上将看不到数据（id属性有值，其它属性无显示）。关键的原因是在执行到`updateInput`之前，`user`对象（在`getMode()`方法中创建的对象）被压到`ValueStack`中，这时候，`UserAction`和`ValueStack`都指向同一个`user`对象；但紧接着，UserAction中的user被一个新的user对象覆盖，这时候，`UserAction`和`ValueStack`不再指向同一个`user`对象！`ValueStack`中是旧的`user`对象，而`UserAction`中是新的`user`对象！我们在JSP中，直接通过`username/address`等直接访问，当然是要访问`ValueStack`中的旧`user`对象，所以它们的属性都是空的(id属性除外)。<br>
+上述代码运行起来之后，你在更新界面上将看不到数据（id属性有值，其它属性无显示）。关键的原因是在执行到`updateInput`之前，user对象（在`getMode()`方法中创建的对象）被压到`ValueStack`中，这时候，`UserAction`和`ValueStack`都指向同一个user对象；但紧接着，UserAction中的user被一个新的user对象覆盖，这时候，`UserAction`和`ValueStack`不再指向同一个user对象！ValueStack中是旧的user对象，而`UserAction`中是新的user对象！我们在JSP中，直接通过`username/address`等直接访问，当然是要访问ValueStack中的旧user对象，所以它们的属性都是空的(id属性除外)。<br>
  
 理解上述问题很重要，当你理解了问题，那么问题的解决方法就可以有很多了：
 比如，你可以把新对象的属性拷贝到旧对象上；比如，你可以先把旧对象从`ValueStack`中移除，然后再把新对象压入`ValueStack`等。<br>
-在最新的struts2版本中，`ModelDrivenInterceptor`提供了一个配置参数：`refreshModelBeforeResult`，只要将它定义为true，上述问题就被解决了！`Struts2`的解决方案就是：先把旧的model对象从ValueStack中移除，然后再把新的model对象压入`ValueStack`。<br>
+在最新的struts2版本中，`ModelDrivenInterceptor`提供了一个配置参数：`refreshModelBeforeResult`，只要将它定义为true，上述问题就被解决了！Struts2的解决方案就是：先把旧的model对象从ValueStack中移除，然后再把新的model对象压入ValueStack。<br>
