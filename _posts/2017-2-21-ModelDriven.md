@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Struts2中的ModelDriven机制及其运用
-date:   2017-02-21 19:20:00 +0800
+date:   2017-02-21 19:25:00 +0800
 categories: 技术博客
 tag: 轻量级JavaEE框架技术
 ---
