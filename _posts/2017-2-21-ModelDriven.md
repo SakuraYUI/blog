@@ -59,6 +59,7 @@ public class User {
 假如你要写一个`Action`，用来添加`User`。<br>
 + 第一种做法是直接在`Action`中定义所有需要的属性，然后在JSP中直接用属性名称来提交数据：<br>
 > UserAction.java
+
 ```java
 public class UserAction {
     private int id;
@@ -115,7 +116,8 @@ public class UserAction {
 ```
 
 > add_input.jsp
-```html
+
+```
 <form action="test/user.action" method="post">
 	<input type="hidden" name="method:add">username:
 	<input type="text" name="username"> <br/>password:
@@ -131,6 +133,7 @@ public class UserAction {
 + 第二种做法是将User对象定义到`UserAction`中，然后在JSP中通过`user`属性来给`user`赋值：<br>
 
 > UserAction
+
 ```java
 public class UserAction {
    
@@ -153,7 +156,8 @@ public class UserAction {
 ```
 
 > add_input.jsp
-```html
+
+```
 <form action="test/user.action" method="post">
 	<input type="hidden" name="method:add">username:
 	<input type="text" name="user.username"> <br/>password:
@@ -169,6 +173,7 @@ public class UserAction {
 + 第三种做法是利用`ModelDriven`机制，让`UserAction`实现一个`ModelDriven`接口，同时实现接口中的方法：`getModel()`。如下所示：<br>
 
 > UserAction
+
 ```java
 public class UserAction implements ModelDriven{
    
@@ -199,7 +204,8 @@ public class UserAction implements ModelDriven{
 ```
 
 > add_input.jsp
-```html
+
+```
 <form action="test/user.action" method="post">
     <input type="hidden" name="method:add">username:
     <input type="text" name="user.username"> <br/>password:
@@ -217,6 +223,7 @@ public class UserAction implements ModelDriven{
 `ModelDriven`背后的机制就是`ValueStack`。界面通过：`username/age/address`这样的名称，就能够被直接赋值给`user`对象，这证明`user`对象正是`ValueStack`中的一个`root`对象。<br>
 那么，为什么`user`对象会在`ValueStack`中呢？它是什么时候被压入`ValueStack的`呢？答案是：ModelDrivenInterceptor（关于Interceptor的概念，请参考后续章节的说明）。`ModelDrivenInterceptor`是缺省的拦截器链的一部分，当一个请求经过`ModelDrivenInterceptor`的时候，在这个拦截器中，会判断当前要调用的`Action`对象是否实现了`ModelDriven`接口，如果实现了这个接口，则调用`getModel()`方法，并把返回值（本例是返回`user`对象）压入`ValueStack`。<br>
 请看`ModelDrivenInterceptor`的代码：<br>
+
 ```java
 public class ModelDrivenInterceptor extends AbstractInterceptor {
  
@@ -251,6 +258,7 @@ public class ModelDrivenInterceptor extends AbstractInterceptor {
 三、理解常见的陷阱及其解决方法
 ============================
 假设我们要更新一个实体对象，那么第一步首先是打开更新界面，请看下述模拟打开更新界面的代码：
+
 ```java
 public class UserAction implements ModelDriven{
    
@@ -278,7 +286,8 @@ public class UserAction implements ModelDriven{
 
 上述代码中，`new UserManager().findUserById(user.getId());`这一行，将从数据库中查询相应的记录，同时转换为User对象返回。而`return “update_input”`将转向更新显示页面。
 更新页面如下：
-```html
+
+```
 <form action="test/user.action" method="post">
     <input type="hidden" name="method:update">id:
     <input type="text" name="id" value="<s:property value="id"/>"> <br/>username:
