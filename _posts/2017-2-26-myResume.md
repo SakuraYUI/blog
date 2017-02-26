@@ -9,6 +9,8 @@ tag: 个人简历
 * content
 {:toc}
 
+
+---
 # 个人信息
 
 - 姓名：梁作宇/男
@@ -30,12 +32,15 @@ tag: 个人简历
 
 - Email：wind_flurry@126.com 
 
-- WeChat：wind_flurry <br>
-![微信扫一扫！]({{ '/styles/images/wechat.jpg' | prepend: site.baseurl }})
+- WeChat：wind_flurry 
 
 - blog：http://blog.csdn.net/wind_flurry
 
 - Github: http://github.com/SakuraYUI
+
+<br>
+![微信扫一扫！]({{ '/styles/images/wechat.jpg' | prepend: site.baseurl }})
+
 
 ---
 # 技能清单
@@ -63,7 +68,6 @@ tag: 个人简历
 - 英语水平`CET-6`
 
 ---
-
 # 获奖履历
 
 - 2013 入围ACM亚洲区区域赛杭州站/长沙站
@@ -88,26 +92,27 @@ tag: 个人简历
     
 - 2016 中国科学技术大学专业奖学金二等奖
 
-## 开源项目
-### 基于SVM的印刷体汉字识别系统
+---
+# 开源项目
+## 基于SVM的印刷体汉字识别系统
 - [Github：https://github.com/SakuraYUI/recognition_SVM](https://github.com/SakuraYUI/recognition_SVM)
 - 使用LibSVM进行模式识别：```使用c-svm,核函数使用RBF,参数c=3,gama=1.0/64,参数的选取用的暴的grid search，简单粗暴```
 - 特征提取：采用更为精确的弹性网格提取特征，记录样本的笔画、外轮廓、内轮廓面积等特征描述样本
 - 创新点：使用上下文语义语法分析，建立汉字词语库，对于识别率较低的汉字，联系上下文进行分析。如“已”和“己”，若上下文出现“已经”则匹配前者，出现“自己”则匹配后者
 
-### 基于CNN的掌脉采集与识别系统
+## 基于CNN的掌脉采集与识别系统
 
-### 电子商务比优网站
+## 电子商务比优网站
 - [Github：https://github.com/SakuraYUI/EShop](https://github.com/SakuraYUI/EShop)
 - 采用Struts2 + Hibernate + Spring 进行开发，使用Maven进行管理
 - 使用商品个性化推荐算法
 
-### 招牌三鲜的个人主页
+## 招牌三鲜的个人主页
 - [Github:https://github.com/SakuraYUI/blog](https://github.com/SakuraYUI/blog)
 - 使用LessOrMore样式、Jekyll框架进行开发，使用Markdown进行博文的编写，用duoshuo提供的接口进行文章评论
 
 ---
-## 实习经历
+# 实习经历
 - 2013暑期 东方标准<br>
 `后台管理系统的学习、制作与开发`
 
@@ -118,6 +123,5 @@ tag: 个人简历
 `Android开发的学习`因准备考研划水过: )
 
 ---
-
 # 致谢
 感谢您花时间阅读我的简历，希望能提供一个面试的机会深入探讨。
