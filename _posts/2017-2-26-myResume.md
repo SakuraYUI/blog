@@ -86,7 +86,7 @@ tag: 个人简历
 - 2015 蓝桥杯软件设计团体赛全国三等奖
 
 - 2015 申请全国大学生创业国家级项目：基于卷积神经网络的掌脉采集与识别系统
-- 2016 发表英文论文《A Convolutional Neural NetworkMethod for Palm Vein Recognition》
+- 2016 发表英文论文`《A Convolutional Neural NetworkMethod for Palm Vein Recognition》`
 	- 《GLOBAL JOURNAL FOR RESEARCH ANALYSIS》
 	- 15th May, 2016
     
