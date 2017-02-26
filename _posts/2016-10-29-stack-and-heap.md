@@ -137,7 +137,7 @@ String str2 = new String("abc");
 
 - 由于String类的immutable性质，当String变量需要经常变换其值时，应该考虑使用`StringBuffer`类，以提高程序效率。
 
-二、Java中内存分配策略及堆和栈的比较
+二、Java中内存分配策略
 ============================
 
 2.1 内存分配策略
