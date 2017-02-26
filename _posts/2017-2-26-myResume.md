@@ -34,9 +34,9 @@ tag: 个人简历
 
 - WeChat：wind_flurry 
 
-- blog：http://blog.csdn.net/wind_flurry
+- blog：[http://SakuraYUI.github.io/blog](http://SakuraYUI.github.io/blog)
 
-- Github: http://github.com/SakuraYUI
+- Github: [http://github.com/SakuraYUI](http://github.com/SakuraYUI)
 
 <br>
 ![微信扫一扫！]({{ '/styles/images/wechat.jpg' | prepend: site.baseurl }})
