@@ -30,7 +30,7 @@ tag: 个人简历
 
 - Email：wind_flurry@126.com 
 
-- WeChat：wind_flurry
+- WeChat：wind_flurry <br>
 ![微信扫一扫！]({{ '/styles/images/wechat.jpg' | prepend: site.baseurl }})
 
 - blog：http://blog.csdn.net/wind_flurry
