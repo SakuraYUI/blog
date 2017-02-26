@@ -1,3 +1,14 @@
+---
+layout: post
+title:  梁作宇的个人简历
+date:   2017-2-26 13:16:00 +0800
+categories: 文章
+tag: 个人简历
+---
+
+* content
+{:toc}
+
 # 个人信息
 
 - 姓名：梁作宇/男
