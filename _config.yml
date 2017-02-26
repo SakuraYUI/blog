@@ -6,10 +6,10 @@ url: https://github.com/SakuraYUI/
 resume_site: https://github.com/SakuraYUI/
 github: https://github.com/SakuraYUI/
 baseurl: ""
-description: 
+description: 招牌三鲜的个人主页
 meta_description: 招牌三鲜的个人主页
 motto: 苟利国家生死以，岂因祸福避趋之
-banner: none
+banner: 招牌三鲜的个人主页
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
