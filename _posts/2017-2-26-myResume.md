@@ -21,7 +21,7 @@ tag: 个人简历
 	- 本科/2012-2016/天津工业大学软件工程
 	- 硕士/2016-2018/中国科学技术大学软件工程
  
-- 期望职位：JavaWeb后台开发实习生
+- 期望职位：JavaWeb相关实习生/算法相关实习生
  
 - 期望城市：上海/北京/杭州
 
@@ -59,11 +59,9 @@ tag: 个人简历
 
 - 会使用`Git`进行版本管理，经常使用`Github`
 
-- 了解并会使用`Maven`
-
 - 会使用`Python`进行编程
 
-- 了解`SVM`与`CNN`，会使用`LibSVM`
+- 了解`SVM`与`CNN`，使用过`LibSVM`
 
 - 英语水平`CET-6`
 
@@ -86,25 +84,24 @@ tag: 个人简历
 - 2015 蓝桥杯软件设计团体赛全国三等奖
 
 - 2015 申请全国大学生创业国家级项目：基于卷积神经网络的掌脉采集与识别系统
+
 - 2016 发表英文论文`《A Convolutional Neural NetworkMethod for Palm Vein Recognition》`
 	- 《GLOBAL JOURNAL FOR RESEARCH ANALYSIS》
 	- 15th May, 2016
-    
+
 - 2016 中国科学技术大学专业奖学金二等奖
 
 ---
-# 开源项目
+# 项目经验
 ## 基于SVM的印刷体汉字识别系统
 - [Github：https://github.com/SakuraYUI/recognition_SVM](https://github.com/SakuraYUI/recognition_SVM)
-- 使用LibSVM进行模式识别：```使用c-svm,核函数使用RBF,参数c=3,gama=1.0/64,参数的选取用的暴的grid search，简单粗暴```
+- 使用LibSVM进行模式识别：```使用c-svm,核函数使用RBF,参数c=3,gama=1.0/64,参数的选取用的grid search，简单粗暴```
 - 特征提取：采用更为精确的弹性网格提取特征，记录样本的笔画、外轮廓、内轮廓面积等特征描述样本
 - 创新点：使用上下文语义语法分析，建立汉字词语库，对于识别率较低的汉字，联系上下文进行分析。如“已”和“己”，若上下文出现“已经”则匹配前者，出现“自己”则匹配后者
 
-## 基于CNN的掌脉采集与识别系统
-
 ## 电子商务比优网站
 - [Github：https://github.com/SakuraYUI/EShop](https://github.com/SakuraYUI/EShop)
-- 采用Struts2 + Hibernate + Spring 进行开发，使用Maven进行管理
+- 采用Struts2 + Hibernate + Spring 进行开发
 - 使用商品个性化推荐算法
 
 ## 招牌三鲜的个人主页
