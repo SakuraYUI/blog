@@ -2,7 +2,7 @@
 layout: post
 title:  HashMap的学习与研究
 date:   2017-03-04 15:00:00 +0800
-categories: 文章
+categories: 技术博客
 tag: 数据结构与算法
 ---
 
