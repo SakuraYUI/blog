@@ -1,0 +1,35 @@
+# Site settings
+name: 招牌三鲜的个人主页
+email: wind_flurry@126.com
+author: SakuraYUI
+url: https://github.com/SakuraYUI/
+resume_site:  https://github.com/SakuraYUI/
+github: https://github.com/SakuraYUI/
+baseurl: ""
+description: 
+meta_description: 
+motto: 苟利国家生死以，岂因祸福 避趋之
+banner: 招牌三鲜的个人主页
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: SakuraYUI
+highlighter: Pygments
+
+# Build settings
+markdown: kramdown
+
+FB:
+  comments :
+    provider : duoshuo
+    duoshuo:
+        short_name : windflurry940421
+    # facebook :
+    #   appid : 123
+    #   num_posts: 5
+    #   width: 580
+    #   colorscheme: light
