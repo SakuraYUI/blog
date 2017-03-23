@@ -71,7 +71,7 @@ tag: 个人简历
 - 2014 ACM亚洲区区域赛牡丹江站铜牌
 > [The 39th ACM/ICPC Asia Regional Mudanjing Onsite Contest:<br>http://board.acmicpc.cn/mdjrank.html](http://board.acmicpc.cn/mdjrank.html)
 
-- 2013 华北五省仿5V5真机器人足球全国三等奖
+- 2013 华北五省仿真机器人足球全国三等奖
 
 - 2014 蓝桥杯C语言程序设计大赛全国三等奖
 
