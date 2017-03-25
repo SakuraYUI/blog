@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  LessOrMore样式+Jekyll框架搭建个人主页教程
-date:   2016-01-01 01:00:00 +0800
+date:  2016-01-01 01:00:00 +0800
 categories: 文章
 tag: 教程
 ---
