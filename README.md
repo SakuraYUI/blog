@@ -40,3 +40,4 @@ var duoshuoQuery = {short_name:"windflurry940421"};
 
 + 2017.3.23 调整部分页面CSS+DIV
 
++ 2018.5.28 开更
